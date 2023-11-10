@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Sidebar"
+                         "Reviews"
+                         "AverageRating"
+                         "SentimentAnalysis"
+                         "WebsiteVisitors";
+    height: 75%;
+    width: 100%;
+    background-color:whitesmoke;
+    margin: auto;
+    padding: 40px 10px 5px 10px;
+    gap: 10px;
+}
+
+.Sidebar{
+    grid-row-start: 1;
+    grid-row-end:4 ;
+    background-color: gray;
+}
+
+.AverageRating{
+    background-color: white;
+    text-align: left;
+}
+
+.Reviews{
+    background-color: gray;
+    text-align: left;
+}
+
+.SentimentAnalysis{
+    background-color: white;
+}
+
+.WebsiteVisitors{
+    background-color: gray;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    text-align: left;
+}
